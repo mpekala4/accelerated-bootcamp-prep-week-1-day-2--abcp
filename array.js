@@ -1,4 +1,5 @@
 function addElementToBeginningOfArray(array, element) {
+  [...array,"element"];
  // add the element to the beginning of the array without mutating the array
 }
 
