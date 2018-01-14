@@ -24,21 +24,21 @@ function accessElementInArray(array, index) {
 
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(array) {
-   array.shift
+function destructivelyRemoveElementFromBeginningOfArray(array,element) {
+   array.shift(element)
    return array
 }
 
-function removeElementFromBeginningOfArray(array) {
+function removeElementFromBeginningOfArray(array,element) {
   return array.slice(1)
 }
 
-function destructivelyRemoveElementFromEndOfArray(array) {
-  array.pop
+function destructivelyRemoveElementFromEndOfArray(array,element) {
+  array.pop(element)
   return array
 }
 
-function removeElementFromEndOfArray(array) {
+function removeElementFromEndOfArray(array,element) {
   var lastNum = array.length -1
   array.slice(0,lastNum)
   return array
