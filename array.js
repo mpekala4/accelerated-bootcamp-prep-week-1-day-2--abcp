@@ -1,24 +1,24 @@
 function addElementToBeginningOfArray(array, element) {
-  ["element", ...array];
+  return ["element", ...array];
  // add the element to the beginning of the array without mutating the array
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element){
   // add element to the beginning of the array by mutating the array
-  [array.unshift("element")];
+  return [array.unshift("element")];
 }
 
 function addElementToEndOfArray(array, element) {
-  [...array, "element"]
+  return [...array, "element"]
 
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  [array.push("element")]
+  return [array.push("element")]
 }
 
 function accessElementInArray(array, index) {
-  array[2];
+  return array[2];
 
 }
 
